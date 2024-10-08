@@ -11,7 +11,7 @@
 |Luan Campos Clemente Alves|desnvolvedor front-end|luanalves6543@gmail.com|
 |Ordac Libaino Trindade Neto|Gerente de Projeto|ordac.neto@estudante.ifro.edu.br|
 |Emanuel Gonçalves|Gerente de Projeto|wagner.ferreira@ifro.edu.br|
-|Jose Sbaraini |Gerente de Proto|josesbarainips@gmail.com|
+|Jose Sbaraini |Gerente de Projeto|josesbarainips@gmail.com|
 
 
 # Sumário
