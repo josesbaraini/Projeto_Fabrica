@@ -1,1 +1,49 @@
 /* Style destinado a TODAS a telas que possuam um header */
+
+:root{
+    --var-cor-fundo-header: rgb(77, 77, 77);
+    --cor-principal: rgb(0, 224, 0);
+}
+header{
+    background-color: var(--var-cor-fundo-header);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+#lista-caminhos{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.header-icon{
+    width: 4vw;
+    border-radius: 50px;
+}
+a{
+   text-decoration: none; 
+}
+.caminho-lista-caminhos{
+    font-size: 2.5vw;
+    color: var(--cor-principal);
+    
+}
+
+#notifica-inicio{
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+}
+.image-link{
+    height: 4vw;
+}
+
+#icon-logo{
+    width: 7vw;
+    
+
+}
