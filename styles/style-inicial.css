@@ -25,17 +25,14 @@ header {
     padding: 10px;
 }
 
-header .logo img {
-    height: 50px;
+
+#lista-caminhos{
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
 }
 
-nav a {
-    color: limegreen;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 25px;
 
-}
 
 main {
     display: flex;
@@ -51,7 +48,9 @@ main {
     padding: 20px;
     border: 2px solid limegreen;
     border-radius: 10px;
-    width: 400px;
+    width: 700px;
+    height:300px ;
+    font-size: 25px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -62,6 +61,7 @@ main {
 .texto-principal span {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 28px;
+    font-weight: bold;
 }
 
 .texto-principal img {
