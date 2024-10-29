@@ -11,7 +11,7 @@ main {
     height: 80vh;
     flex-direction: column;
 }
-main div{
+.formulario{
     text-align: center;
     background-color: #fff;
     color: #000;
@@ -26,16 +26,59 @@ main div{
 
  #my {
     color: white;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: 900;
     text-shadow: #0DFF00 6px 0 2px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
-    
+   letter-spacing: 5px; 
 
 }
     
 header{
     justify-content: center;
 }
+
+.dois{
+    border: 2px solid #000000;
+    box-shadow: #0DFF00 0px 5px 1px;
+    border-radius: 20px;
+    background-color: rgb(190, 190, 190);
+    height: 30px;
+    background-position: 10px 0px ;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+ 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+ #pessoa{
+    background-image: url('/img/pessoa3.png');
+    
+ }
+ #cadeado{
+    background-image: url('/img/cadeado2.png');
+ }
+ #cadeado img{
+
+ }
+.login{
+    margin-top: 50px;
+    border-radius: 80px;
+    height: 20px;
+
+}
+.conta{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+
+}
+
+
