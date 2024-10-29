@@ -47,3 +47,49 @@ a{
     
 
 }
+
+/* Bagulhos da aba de utilidades abaixo */
+
+.item-icon{
+    width: 16px;
+    margin-right: 10px;
+
+}
+
+.item-text{
+    color: white;
+    font-weight: bold;
+}
+.utilit-item{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    padding: 3px;
+    height: 32px;
+    align-items: center;
+    
+
+}   
+.aba-utilidades{
+    background-color: grey;
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    transition: width 0.6s;
+    position: fixed;
+
+}
+
+
+
+.main-diminuido{
+    left: 200px;
+    width: calc(100vw - 200px);
+    position: fixed;
+}
+
+.aumentada{
+    width: 200px;
+}
+
+/* Cabo */
