@@ -33,6 +33,10 @@ a{
     
 }
 
+#header-login{
+    justify-content: center;
+}
+
 #notifica-inicio{
     display: flex;
     justify-content: space-between;

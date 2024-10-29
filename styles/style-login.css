@@ -24,7 +24,7 @@ main div{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
- main h1{
+ #my {
     color: white;
     font-size: 50px;
     font-weight: 900;
@@ -36,3 +36,6 @@ main div{
 
 }
     
+header{
+    justify-content: center;
+}
