@@ -19,7 +19,7 @@ main {
     border: 2px solid #0DFF00;
     border-radius: 10px;
     width: 400px;
-    height:300px ;
+    height:270px ;
     font-size: 25px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -81,4 +81,33 @@ form{
 
 }
 
+#button-submit-div{
+    display: flex; 
+    justify-content: center;
+ }
 
+ #submit-button{
+    width: 200px;
+    height: 30px;
+    box-shadow: #0DFF00 0px 1px 8px;
+    background-color: rgb(235, 255, 235)
+
+ }
+
+ #submit-button:hover{
+    background-color: rgba(211, 230, 211, 0.664);
+    cursor: pointer;
+
+}
+
+.label{
+    font-size: medium;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.asterisco{
+    color: red;
+
+}

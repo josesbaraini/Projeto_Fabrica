@@ -14,7 +14,7 @@ Style principal: style-login
     <link rel="stylesheet" href="/styles/style-header.css">
 </head>
 <body>
-    <header id="header-login">
+    <header class="header-login-cadastro">
         <h1 id="my">MY GYM</h1>
     </header>
     <div class="aba-utilidades">
@@ -49,11 +49,11 @@ Style principal: style-login
     <main class="main-teste">
         <div class="formulario">
             <form action="">
-                <label for="fname">E-mail:</label><br>
+                <label class="label" for="fname">E-mail: <span class="asterisco">*</span></label>
                 <input  class="dois" id="pessoa" type="text" id="fname" name="fname"><br>
-                <label  for="lname">Senha:</label><br>
+                <label class="label"  for="lname">Senha: <span class="asterisco">*</span></label>
                 <input class="dois" id="cadeado" type="text" id="lname" name="lname">
-                <input class="login"type="submit" value="Login" >
+                <div id="button-submit-div" ><input id="submit-button" class="login"type="submit" value="Login" ></div>
             </form>
             <div class="conta">
                 <p>Ainda não tem conta? Criar conta</p>

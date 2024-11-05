@@ -109,3 +109,15 @@ body{
     color: red;
 
 }
+
+#my {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: #0DFF00 6px 0 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+   letter-spacing: 5px; 
+
+}
