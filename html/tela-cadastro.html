@@ -88,17 +88,17 @@ Style principal: style-cadastro
     <main class="main-teste">
         <div class="formulario">
             <form action="">
-                <label for="email">E-mail:</label>
+                <label class="label" for="email">E-mail:<span class="asterisco">*</span></label>
                 <input  class="dois" id="pessoa" type="text" id="fname" name="email"><br>
-                <label  for="lname">Senha:</label>
+                <label class="label"  for="lname">Senha: <span class="asterisco">*</span></label>
                 <input class="dois" id="cadeado" type="text" id="lname" name="lname"><br>
-                <label for="csenha">Confirmar senha:</label>
+                <label class="label" for="csenha">Confirmar senha: <span class="asterisco">*</span></label>
                 <input  class="dois" id="cadeado" type="text" id="fname" name="csenha"><br>
-                <label for="cell">Celular:</label>
+                <label class="label" for="cell">Celular:</label>
                 <input  class="dois" type="text" id="fname" name="cell"><br>
-                <label for="nome">Nome do Usuário:</label>
+                <label class="label" for="nome">Nome do Usuário: <span class="asterisco">*</span></label>
                 <input  class="dois" type="text" id="fname" name="nome">
-                <input class="login"type="submit" value="Cadastrar">
+                <div id="button-submit-div"><input id="submit-button" class="login"type="submit" value="Cadastrar"></div>
             </form>
             <div class="conta">
                 <p>Já tem uma conta? Fazer Login</p>
