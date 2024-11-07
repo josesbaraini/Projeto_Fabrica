@@ -1,1 +1,155 @@
 /* style destinado SOMENTE a tela de antes e depois */
+body{
+    background-color: black;
+}
+main{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.section-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 90vh;
+}
+
+.section-photo-winst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    width: 15vw;
+    color: white;
+}
+
+.img-photo-winst{
+    border-radius: 100%;
+    /* border: 1px solid black; */
+}
+.photo-winst-div{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.winst{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.winst h1{
+    color: var(--cor-principal);
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 0px 0px 7px var(--cor-principal);
+    
+}
+
+.div-table{
+    color: white;
+    border: solid var(--cor-principal) 2px;
+    height: 60vh;
+    width: 30vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 22px;
+    min-width: 320px;
+}   
+
+.table{
+    height: 55vh;
+
+}
+
+.table tr{
+    align-items: center;
+    border: solid var(--cor-principal) 2px;
+    display: flex;
+    justify-content: space-around;
+    height: 10.5vh;
+    margin: 0.75px;
+    width: 28vw;
+    overflow: hidden;
+    transition: 0.6s;
+    min-width: 280px;
+
+
+}
+
+#tbody-second{
+    position: relative;
+}
+
+.tr-circun{
+    position: absolute; 
+    top: calc(32.75vh + 4.5px);
+    transition: 0.5s;
+    background-color: black;
+}
+
+#tr-cirinfo{
+    height: 0px;
+    overflow: hidden;
+    justify-content: start;
+    align-items: initial;
+    font-size: 15px;
+}
+
+.circun-tr-cima{
+    top: calc(22.25vh + 3px);
+}
+#circun-line{
+    cursor: pointer;
+}
+
+.p-cirinfo{
+    margin: 5px;
+}
+
+@media only screen and (max-width : 1050px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-photo-winst{
+        height: 30vh;
+        width: 40vw;
+        justify-content: flex-end;
+        
+        
+        
+    }
+    .photo, .winst{
+        margin: 10px;
+    }
+    .photo-winst-div{
+        justify-content: space-around;
+        width: 40vw;
+        
+    }
+    
+
+}
