@@ -23,6 +23,7 @@ header{
 .header-icon{
     width: 4vw;
     border-radius: 50px;
+    cursor: pointer;
 }
 a{
    text-decoration: none; 
