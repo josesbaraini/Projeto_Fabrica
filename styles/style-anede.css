@@ -134,6 +134,13 @@ main{
     margin: 5px;
 }
 
+@media only screen and (max-width : 550px){
+    section#section-title{
+        font-size: 30px;
+    }
+
+}
+
 @media only screen and (max-width : 1050px){
     main{
         flex-direction: column;
@@ -148,7 +155,6 @@ main{
     .div-table{
         width: 65vw;
     }
-
 
     .section-photo-winst{
         height: 50vh;
@@ -169,3 +175,4 @@ main{
     
 
 }
+
