@@ -48,7 +48,9 @@ header{
     background-size: 30px;
  
 }
-
+.link{
+    color: var(--cor-principal);
+}
 form{
     display: flex;
     flex-direction: column;

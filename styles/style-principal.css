@@ -22,7 +22,7 @@ main{
     align-items: center;
     border-radius: 20px;
     margin: 20px;
-    font-size: 25px;
+    font-size: 40px;
     min-width: 320px;
 }   
 
@@ -53,3 +53,13 @@ main{
 
 }
 
+
+@media only screen and (max-width : 1050px){
+    .div-table{
+   
+        font-size: 30px;
+
+    }
+
+
+}

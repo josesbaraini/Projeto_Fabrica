@@ -85,7 +85,7 @@ main{
 .table tr td{
     margin: 10px;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
 .table tr{

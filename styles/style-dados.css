@@ -85,7 +85,7 @@ main{
 .table tr td{
     margin: 10px;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
 .table tr{
@@ -124,7 +124,7 @@ main{
 }
 
 .circun-tr-cima{
-    top: calc(22.25vh + 3px);
+    top: calc(22.25vh);
 }
 #circun-line-1, #circun-line-2{
     cursor: pointer;
