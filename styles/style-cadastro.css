@@ -51,6 +51,10 @@ header{
 .link{
     color: var(--cor-principal);
 }
+.link:hover{
+    color: #0DFF00;
+    text-shadow: #000000a1 1px 1px 2px;
+}
 form{
     display: flex;
     flex-direction: column;

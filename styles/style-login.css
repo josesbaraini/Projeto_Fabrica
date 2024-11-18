@@ -26,6 +26,10 @@ main {
 .link{
     color: var(--cor-principal);
 }
+.link:hover{
+    color: #0DFF00;
+    text-shadow: #000000a1 1px 1px 2px;
+}
  #my {
     color: white;
     font-size: 80px;
