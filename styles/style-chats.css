@@ -1,1 +1,375 @@
 /* Style destinado SOMENTE a tela de Chats */
+:root {
+    --var-cor-fundo-header: rgb(77, 77, 77);
+    --cor-principal: rgb(0, 224, 0);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    background-color: var(--var-cor-fundo-header);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lista-caminhos{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.header-icon{
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+a{
+   text-decoration: none; 
+}
+.caminho-lista-caminhos{
+    font-size: 30px;
+    color: var(--cor-principal);
+}
+.header-login-cadastro{
+    justify-content: center;
+}
+
+#notifica-inicio{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.image-link{
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+#icon-logo{
+    width: 100%;
+    height: 100%;
+}
+
+/* Itens da aba de utilidades abaixo */
+
+.item-icon{
+    width: 16px;
+    margin-right: 10px;
+}
+
+.item-text{
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+}
+.utilit-item{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    padding: 3px;
+    height: 32px;
+    align-items: center;
+} 
+
+.aba-utilidades{
+    background-color: grey;
+    height: 100vh;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.6s;
+    position: absolute;
+    z-index: 3;
+}
+
+main{
+    transition: 0.6s;
+}
+
+.escuro{
+    position: absolute;
+    width: 0px;
+    transition: 0.6s;
+    height: 100%;
+}
+.escuro-aparecendo{
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.644);
+    z-index: 2;
+}
+
+.aumentada{
+    width: 200px;
+}
+
+@media only screen and (max-width : 1050px){
+    .escuro{
+        height: 1493px;
+    }
+    .aba-utilidades{
+        height: 1493px;
+    }
+}
+
+@media only screen and (max-width : 850px){
+    .caminho-lista-caminhos{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width : 550px){
+    .caminho-lista-caminhos{
+        font-size: 15px;
+    }
+
+    #icon-logo{
+        display: none;
+    }
+}
+
+/*............................................................................ */
+
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Barra Superior (70px de altura) */
+.top-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #222222; /* Fundo cinza */
+    border-bottom: 2px solid #00ff00; /* Borda verde na parte inferior */
+    display: flex;
+    justify-content: space-between; /* Divide a barra em duas metades */
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 10vh; /* Define o espaço abaixo do header (10vh é a altura do header) */
+    z-index: 10;
+}
+
+/* Metade Esquerda - Pesquisar Amigo */
+.left-half {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na metade esquerda */
+    align-items: center;
+    width: 50%; /* Define que a metade esquerda ocupa 50% da largura da barra */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #000000; /* Fundo cinza claro para o input */
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 300px;
+    
+}
+
+.search-icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    background-color: #000000; /* Mesmo fundo que o container */
+    font-size: 14px;
+    width: 100%;
+    color: white;
+}
+
+/* Metade Direita - Adicionar Amigo */
+.right-half {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na metade direita */
+    align-items: center;
+    width: 50%; /* Define que a metade direita ocupa 50% da largura da barra */
+}
+
+.add-friend-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Efeito de hover no botão */
+.add-friend-button:hover {
+    background-color: #777;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    height: calc(100vh - 70px - 10vh); /* Subtraindo a altura da top-bar e do header */
+    margin-top: calc(0px + 10vh); /* Move o conteúdo principal abaixo da top-bar */
+}
+
+/* Largura Igual para os Painéis Esquerdo e Direito */
+.chat-container, .chat-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: rgb(236, 236, 236);
+}
+
+/* Estilos do Painel Esquerdo */
+.chat-header {
+    padding: 10px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.status {
+    color: #00ff00; /* Verde para "ligado" */
+}
+
+.chat-body {
+    flex: 1;
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button {
+    background-color: #555;
+    color: white;
+    top: 0px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #777;
+}
+
+/* Estilos do Painel Direito */
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.message-bubble {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 60%;
+    position: relative;
+}
+
+.message.sent .message-bubble {
+    background-color: #444;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.message.received .message-bubble {
+    box-shadow: 0 0 10px lime;
+}
+
+/* Teclado Virtual */
+.keyboard-area {
+    background-color: #222;
+    padding: 10px;
+}
+
+.virtual-keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+}
+
+.virtual-keyboard button {
+    background-color: #555;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.virtual-keyboard button:hover {
+    background-color: #777;
+}
+
+/* Personalização do botão de espaço */
+.virtual-keyboard .space {
+    grid-column: span 10; /* Tamanho maior */
+    text-align: center;
+}
+
+/* Seção Superior do Painel Direito ("vovó chao") */
+.chat-header-right {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #00ff00;
+    position: sticky; /* Mantém o header fixo no topo do painel direito */
+    top: 0;
+    z-index: 5;
+}
+
+.chat-header-right .user-info {
+    display: flex;
+    align-items: center;
+}
+
+.chat-header-right .user-icon {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.chat-header-right .user-name {
+    color: white;
+    font-size: 16px;
+}

@@ -9,11 +9,40 @@ Style principal: style-abasocial
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Aba Social</title>
-    <link rel="stylesheet" href="/styles/style-abasocial.css">
+    <link rel="stylesheet" href="/trabalho2/Projeto_Fabrica/styles/style-abasocial.css">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/style-header.css">
 </head>
-<body>
+<body> 
+     <!-- Interface Dividida em Esquerda e Direita -->
+     <div class="container">
+        <!-- Metade Esquerda -->
+        <div class="left-half">
+            <div class="search-bar">
+                <div class="search-icon">🔍</div>
+                <input type="text" placeholder="pesquisar amigo adicionado">
+            </div>
+            <div class="add-button">+</div>
+        </div>
+
+        <!-- Metade Direita -->
+        <div class="right-half">
+            <div class="add-friend-bar">
+                <div class="add-icon">+</div>
+                <span>adicionar amigo</span>
+            </div>
+            <div class="suggestions">
+                <div class="suggestion-title">pessoas que você talvez conheça</div>
+                <div class="suggestion-card"><span>fulano</span><div class="user-icon">👤</div></div>
+                <div class="suggestion-card"><span>bertano</span><div class="user-icon">👤</div></div>
+                <div class="suggestion-card"><span>ciclano</span><div class="user-icon">👤</div></div>
+                <div class="suggestion-card highlighted"><span>vovô chao</span><div class="user-icon">👤</div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
     <header>
         <div id="aba-config">
             <img class="header-icon" src="/img/settings.png" id="button-utilidades">

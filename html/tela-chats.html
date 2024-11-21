@@ -14,6 +14,100 @@ Style principal: style-chats
     <link rel="stylesheet" href="/styles/style-header.css">
 </head>
 <body>
+       <!-- Barra Superior: Contém o campo de pesquisa e o botão "Adicionar Amigo" -->
+       <div class="top-bar">
+        <!-- Metade Esquerda: Pesquisar amigos -->
+        <div class="left-half">
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Pesquisar amigo adicionado">
+            </div>
+        </div>
+
+        <!-- Metade Direita: Botão para Adicionar amigo -->
+        <div class="right-half">
+            <button class="add-friend-button"> + Adicionar amigo</button>
+        </div>
+    </div>
+    
+    <!-- Contêiner Principal: Contém os painéis de chat -->
+    <div class="container">
+        <!-- Painel Esquerdo: Chat com "vovó chao" -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <!-- Informações do Usuário (Nome e Status) -->
+                <div class="user-info">
+                    <span class="user-icon">👤</span>
+                    <span class="user-name">vovó chao</span>
+                </div>
+                <span class="status">on</span> <!-- Indicador de status online -->
+            </div>
+            <div class="chat-body"></div> <!-- Área de mensagens de chat -->
+            <div class="chat-footer">
+                <button class="add-button">+</button> <!-- Botão para adicionar mensagem -->
+            </div>
+        </div>
+    
+        <!-- Painel Direito: Mensagens de chat e teclado virtual -->
+        <div class="chat-right">
+            <!-- Cabeçalho do chat no topo do painel direito (mesmo usuário) -->
+            <div class="chat-header-right">
+                <div class="user-info">
+                    <span class="user-icon">👤</span>
+                    <span class="user-name">vovó chao</span>
+                </div>
+            </div>
+            
+            <!-- Área de Mensagens do Chat -->
+            <div class="chat-messages">
+                <div class="message sent">
+                    <span class="message-bubble">Mensagem enviada</span>
+                </div>
+                <div class="message received">
+                    <span class="message-bubble">Mensagem recebida</span>
+                </div>
+            </div>
+    
+            <!-- Área do Teclado Virtual -->
+            <div class="keyboard-area">
+                <div class="virtual-keyboard">
+                    <!-- Botões do Teclado (Linhas superior, do meio e inferior) -->
+                    <button>Q</button>
+                    <button>W</button>
+                    <button>E</button>
+                    <button>R</button>
+                    <button>T</button>
+                    <button>Y</button>
+                    <button>U</button>
+                    <button>I</button>
+                    <button>O</button>
+                    <button>P</button>
+                    
+                    <button>A</button>
+                    <button>S</button>
+                    <button>D</button>
+                    <button>F</button>
+                    <button>G</button>
+                    <button>H</button>
+                    <button>J</button>
+                    <button>K</button>
+                    <button>L</button>
+                    
+                    <button>Z</button>
+                    <button>X</button>
+                    <button>C</button>
+                    <button>V</button>
+                    <button>B</button>
+                    <button>N</button>
+                    <button>M</button>
+                    <button class="space">Espaço</button> <!-- Barra de espaço -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>       
     <header>
         <div id="aba-config">
             <img class="header-icon" src="/img/settings.png" id="button-utilidades">
